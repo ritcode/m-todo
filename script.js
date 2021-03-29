@@ -105,6 +105,7 @@ function toggleInputButtons() {
 }
 
 load()
+toggleInputButtons()
 $('.btn-check').click(() => {
   $('.lists').css('display', 'none')
   $('#' + activeCollection()).css('display', 'block')

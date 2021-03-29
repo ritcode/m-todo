@@ -43,9 +43,9 @@
           <li class="nav-item">
             <a class="nav-link disabled" href="#">Save to Drive(coming soon)</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link disabled" href="#">Login</a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Guest</a>
           </li>
@@ -90,12 +90,16 @@
       </div>
     </div>
     <div class="row">
-      <div class="d-grid gap-2 d-md-block col-6">
+      <div class="d-grid gap-2 d-md-block col-lg-6 col-xs-10 col-sm-10 col-md-6">
         <div class="row">
-          <button class="btn btn-primary btn-info col-5 m-2" type="button" disabled id="btnSort"><i
-              class="bi bi-filter-square"></i> Sort</button>
-          <button class="btn btn-primary btn-warning col-5 m-2" type="button" disabled id="btnCleanup"><i
-              class="bi bi-trash"></i> Cleanup</button>
+          <div class="col-6">
+            <button class="btn btn-primary btn-info m-2 m-sm-1" style="width: 100%;" type="button" disabled
+              id="btnSort"><i class="bi bi-filter-square"></i> Sort</button>
+          </div>
+          <div class=" col-6">
+            <button class="btn btn-primary btn-warning m-2 m-sm-1" type="button" style="width: 100%;" disabled
+              id="btnCleanup"><i class="bi bi-trash"></i> Cleanup</button>
+          </div>
         </div>
       </div>
     </div>
@@ -105,6 +109,8 @@
     <div class="row lists" id="Office">
       <ul class="row list-group m-2" id="ulTasksOffice"></ul>
     </div>
+    <div class="row d-sm-none d-md-none" style="height: 50px;"></div>
+  </div>
 
 
 </body>
